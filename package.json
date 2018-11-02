@@ -1,0 +1,36 @@
+{
+  "name": "web-dev-kit",
+  "version": "1.0.0",
+  "description": "Web Development starter kit with Gulp and Browserify",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/afifkhaidir/wp-theme-kit.git"
+  },
+  "keywords": [
+    "wordpress",
+    "theme",
+    "gulp"
+  ],
+  "author": "afifkhaidir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/afifkhaidir/wp-theme-kit/issues"
+  },
+  "homepage": "https://github.com/afifkhaidir/wp-theme-kit#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.0"
+  }
+}
