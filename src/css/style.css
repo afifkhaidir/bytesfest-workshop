@@ -19,12 +19,14 @@ a:focus {
 /* Header */
 .navbar-default {
   background: #2196F3;
+  border: none;
 }
 
 .navbar-default .navbar-brand,
 .navbar-default .navbar-nav > li > a {
   color: #FFF;
   transition: 0.2s;
+  text-align: center;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -43,6 +45,15 @@ a:focus {
 .navbar-default .navbar-nav > li > a.btn-login:active,
 .navbar-default .navbar-nav > li > a.btn-login:focus {
   background: #BB7700;
+}
+
+.navbar-form {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-form .input-group {
+  min-width: 250px;
 }
 
 /* Section */
@@ -68,8 +79,23 @@ a:focus {
 
 /* Flash Sale */
 .flash-card {
-  width: 20%;
+  width: 50%;
+  margin-bottom: 16px;
   float: left;
+}
+
+@media (min-width: 768px) {
+  .flash-card {
+    width: 25%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .flash-card {
+    width: 20%;
+    float: left;
+  }
 }
 
 .flash-card__img {
@@ -100,6 +126,9 @@ a:focus {
 }
 
 /* Hot List */
+.hot-card {
+  margin-bottom: 16px;
+}
 .hot-card-detail {
   padding: 16px;
 }
@@ -122,4 +151,43 @@ a:focus {
 
 .hot-card__price {
   color: #FF9800;
+}
+
+/* Categories */
+.category-chip {
+  background: #FFF;
+  border: 1px solid #E0E0E0;
+  border-radius: 50px;
+  padding: 8px 16px;
+  display: block;
+  color: #757575;
+  margin-bottom: 4px;
+}
+
+.category-chip:hover {
+  background: #BBDEFB;
+  color: #212121;
+}
+
+/* Footer */
+.footer {
+  background: #BBDEFB;
+  font-size: 12px;
+}
+
+.footer__h4 {
+  margin: 24px 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li a {
+  display: block;
+  padding: 4px 0;
+  color: #757575;
 }
